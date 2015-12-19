@@ -1,0 +1,189 @@
+
+html{
+  background-color: rgba(225,248,255,.9);
+}
+body {
+  padding: 50px;
+  font: 12pt bold "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: darkblue;
+  background: url("../img/darkLogo.png") no-repeat center center fixed;
+}
+
+
+.bs-docs-footer, .navbar-default{
+    background: linear-gradient(to bottom,rgba(114, 195, 255, 0.9)100%,rgb(51, 102, 153) 100%);
+    border-color: midnightblue;
+}
+.navbar-default{
+    background: linear-gradient(to bottom,rgba(95, 113, 178, 0.9)0,rgb(114, 195, 255) 100%);;
+    border-color: rgba(41,97,127,.9);
+}
+/*title*/
+
+.navbar-default .navbar-brand {
+  color: rgba(225,248,255,.9);
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: rgba(225,248,255,.9);
+}
+
+
+/* link */
+.navbar-default .navbar-nav > .active > a > li > .open, 
+.navbar-default .navbar-nav > .active > a:hover > li, 
+.navbar-default .navbar-nav > .active > a:focus > li{
+  background: linear-gradient(to bottom,#e8e8e8 0,rgba(200,200,200,.5) 100%);
+  color:  black;
+  font: 14pt bold;
+}
+/* navbar link colour */
+.navbar-default .nav>li>a{
+  color: black;
+  font-size: 16pt;
+  font-variant: bold;
+}
+
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+  color: rgba(225,248,255,.9);
+   background: rgba(41, 70, 127, 0.9)0;
+}
+
+.table>thead>tr>th {
+
+  background: linear-gradient(rgb(204,204,255) 0%, rgba(114, 195, 255, 0.9)100%);
+
+  border-style: solid;
+  border-color: midnightblue;
+  border-width: 1px;
+
+}
+#companyTitle{
+  color: midnightblue;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22pt;
+  font-variant: small-caps;
+}
+.jumbotron {
+  background: linear-gradient(rgb(204,204,255) 0%, rgba(114, 195, 255, 0.9)100%);
+
+  border-style: solid;
+  border-color: midnightblue;
+  border-width: 1px;
+
+
+}
+.form-group {
+    margin-bottom: 15px;
+}
+a {
+  color: darkblue;
+}
+#signInForm {
+    margin: 0 auto;
+    width: 250px;
+    text-align: center;
+}
+.container {
+    width: 750px;
+}
+#title {
+  font-size: 30pt;
+    border-bottom: 1px solid midnightblue;
+}
+.registrationForm, .loginForm{
+  width:500px;
+}
+#shortAnswer {
+   width:750px;
+   height: 200px;
+}
+.questionBox {
+  width:300px;
+  height:30px;
+}
+.surveyName {
+ background:rgba(255,255,255,1);
+ margin:0px;
+ width:390px;
+ font-size:20px;
+ font-weight:600;
+ padding:15px;
+ border:1px solid lightgrey;
+ color: #49555b;
+ float:left;
+}
+#register, #text-box, .well{
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif black bold;
+    background-color: rgba(65,155,204,.9);
+    border: 1px solid black;
+    opacity: 0.9;
+    filter: alpha(opacity=60);
+    color: #fff;   
+    background-image: linear-gradient(to bottom,#e8e8e8 0,rgba(200,200,200,.5) 100%);
+}
+.row, .well{
+      background-image: linear-gradient(to bottom,#e8e8e8 0,rgb(45, 89, 134) 100%);
+      border: midnightblue thin;
+}
+.tab-content{
+  filter: alpha(opacity=60);
+  padding: 10px;
+  background-image: linear-gradient(to bottom,#e8e8e8 0,rgba(200,200,200,.5) 100%);
+}
+label{
+  width:100px;
+}
+input{
+  width:100px;
+}
+
+/*create survey tabs */
+.tab-content{
+  background: transparent;
+  
+}
+.nav-tabs>li>a, 
+.nav-tabs>li>a:focus{
+ color: midnightblue;
+font-variant: small-caps;
+font-weight: bold;
+}
+.nav-tabs>li>a:hover{
+  background: linear-gradient(rgb(204,204,255) 0%, rgba(114, 195, 255, 0.9)100%);
+  border-color: midnightblue;
+}
+.nav-tabs>li.active>a, 
+.nav-tabs>li.active>a:focus, 
+.nav-tabs>li.active>a:hover {
+ background-color: transparent;
+ color: midnightblue;
+ border-color: midnightblue;
+font-variant: small-caps;
+font-weight: bold;
+}
+.nav-tabs{
+   border-bottom-color: midnightblue;
+
+}
+
+.panel, .table{
+  background-color: transparent;
+  border-color: midnightblue;
+}
+
+
+
+/*KarenS Dec2/15
+Added the text box colors, will change to funner(?) color
+adjusted spacing issues to line up the text boxes*/
+
+/*Amanda Dec 9th
+Implement styles to jumbotron, titles and forms */
+
+/*Amanda Dec 9th
+Implement styles to user management nav, footer */

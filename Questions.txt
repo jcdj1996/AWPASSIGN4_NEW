@@ -1,0 +1,12 @@
+There is a directory called /bower_component
+    -> the same files are located in /public/lib
+ARE THE DUPLICATES NECESSARY?
+
+everypage requires bootstrap 
+WHY IS IT NOT IN EVERY FOOTER?
+
+<br/> tags should only be used inside p tags
+PLACE THE ITEM YOU WISH TO SEPERATE IN A <DIV>
+
+formatting
+MAKE SURE TO INDENT WITH 2 SPACES RATHER THAN A TAB. IF YOU USE SPACES ALL THE FILES WILL LOOK THE SAME

@@ -1,0 +1,47 @@
+<% include ../partials/header.ejs %>
+<main class="container">
+    <h1>Edit a Survey</h1>
+    <div class="col-sm-4">
+        <% if(survey.type="agree"){ %>
+		<!-- A/D form -->
+			<form method="post">
+		<input name="formtype" type="hidden" value="agree" />
+
+		<fieldset class="form-group">
+		<input name="surveyname" type="text" required class="form-control surveyName" placeholder="Untitled Survey">
+			<input class="form-control" style="width:250px; text-align: center;" name="upload" type="file">
+		</fieldset>
+			<h4><label for="qa1">1.</label></h4>
+			<fieldset class="form-group">
+				<input type="text" name="qa1" value=<% survey.question1 %> class="form-control" style="width:700px" /> 
+			</fieldset>
+			<h4><label for="qa2">2.</label></h4>
+			<fieldset class="form-group">
+				<input type="text" name="qa2" value=<% survey.question2 %> class="form-control" style="width:700px" /> 
+			</fieldset>
+			<h4><label for="qa3">3.</label></h4>
+			<fieldset class="form-group">
+				<input type="text" name="qa3" value=<% survey.question3 %> class="form-control" style="width:700px" /> 
+			</fieldset>
+			<h4><label for="qa4">4.</label></h4>
+			<fieldset class="form-group">
+				<input type="text" name="qa4" value=<% survey.question4 %> class="form-control" style="width:700px" /> 
+			</fieldset>
+			<h4><label for="qa5">5.</label></h4>
+			<fieldset class="form-group">
+				<input type="text" name="qa5" value=<% survey.question5 %> class="form-control" style="width:700px" /> 
+			</fieldset>
+	<input type="submit" class="btn btn-primary" value="Save">
+	</form>	
+		<!-- end A/D Form -->
+		<% }else{%>
+		<!-- Multi Form -->
+				
+		<!-- End Multi Form -->
+		<% } %>
+    </div>
+
+</main>
+<% include ../partials/footer.ejs %>
+
+<!-- Modified by James 18TH DEC -->

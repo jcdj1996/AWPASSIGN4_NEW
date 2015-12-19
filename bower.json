@@ -1,0 +1,30 @@
+{
+  "name": "authtodo",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Ari Rovithis",
+    "Karen Sprinford",
+    "James Jennings",
+    "Amanda Field"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "font-awesome": "~4.4.0",
+    "angular": "~1.4.8",
+    "angular-route": "~1.4.8",
+    "angular-resource": "~1.4.8",
+    "bootstrap": "~3.3.5"
+  }
+}

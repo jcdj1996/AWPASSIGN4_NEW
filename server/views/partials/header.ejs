@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width = device-width, initial-scale =1">
+  <title><%- title %></title>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.10/angular.min.js"></script>
+  <script src="../javascripts/AngularApp.js"></script> 
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"  crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"  crossorigin="anonymous">
+  <!-- Latest compiled and minified JavaScript -->
+  <link rel="stylesheet" href="../lib/font-awesome/css/font-awesome.min.css">
+  <!-- Custom CSS -->
+  <link rel='stylesheet' href='../stylesheets/style.css' />
+</head>
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar">Home</span>
+          <span class="icon-bar">About</span>
+          <span class="icon-bar">Account</span>
+          <span class="icon-bar">Login</span>
+          <span class="icon-bar"></span>
+        </button>
+        <img src="../img/smallDarkLogo.png" alt="Dark Lion"/>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li <% if(title =='AWP Assignment 4'){%>class="active"<%}%>><a href="/">Home</a></li>
+          <li <% if(title =='AWP Assignment 4 | About'){ %>class="active"<%}%>><a href="/about">About</a></li>
+          <li <% if(title =='AWP Assignment 4 | All Surveys'){ %>class="active"<%}%>><a href="/survey">Surveys</a></li>
+        <li> <% if(displayName =='') { %>             
+            <li <% if(title =='Login'){ %>class="active"<%}%>><a href="/login">Login</a></li>
+            <% }else { %>
+            <li <% if(title =='Users'){ %>class="active"<%}%>><a href="/users">Account</a></li>
+            <li <% if(title =='AWP Assignment 4 | Submit'){ %>class="active"<%}%>><a href="/survey/add">Submit a Survey</a></li>
+            <li><a href="/logout">Logout</a></li>
+            <% } %> 
+        </ul>
+        <ul class="nav navbar-nav pull-right">
+          <li> <a id ="companyTitle" href="/">King and Queen's Surveys</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
+  </nav>
+<!--Added in the Register and Login:Karen Springford -->
+<!--Add in company name and get rid of login and register -->
+<!--Changed navbar paths and logo url James 18TH DEC-->

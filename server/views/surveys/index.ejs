@@ -1,0 +1,52 @@
+<% include ../partials/header.ejs %>
+<main class="container-fluid">
+  <div class="jumbotron">
+    <div class="panel panel-default">
+    <% if (surveys.length > 0) { %>
+    <label><h2>Welcome</h2></label>
+    <div class="panel-body table-responsive" >
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Survey</th>
+            <th>Creator</th>
+            <th>Date Created</th>
+            <th>Date Updated</th>
+            <th></th>
+          </tr>
+        </thead>
+        </tbody>
+          <% for (var i = 0; i < users.length; i++) { %>
+          <tr>
+            <td>
+             <!-- <%= users[i].displayName %> - Change to survey name-->
+            </td>
+            <td>
+              <!-- <%= users[i].email %> - Change to company -->
+            </td>
+            <td>
+          <!--    <% var date = new Date(users[i].created);
+              var dateString = date.toDateString() + " " + date.toLocaleTimeString(); 
+              dateString %> - Change to date for survey created--> 
+            </td>
+            <td>
+              <a href="/survey/<%= survey[i]._id %>" title="Edit" class="btn btn-primary">
+                <i class="fa fa-pencil-square-o"></i>
+              </a>
+              <a href="/survey/delete/<%= survey[i]._id %>" title="Delete" onclick="return confirm('Are you sure you want to delete this?');" class="btn btn-danger">
+                <i class="fa fa-trash-o"></i>
+              </a>
+            </td>   
+          </tr>
+          <% } %>
+        </tbody>
+      </table>
+    </div> <!-- panel-body -->
+    <% } %> 
+  </div><!-- jumbotron  -->
+  </div><!-- panel panel-default -->
+</main>
+
+<% include ../partials/footer.ejs %>
+
+<!-- dec 10th - Amanda - page works -->

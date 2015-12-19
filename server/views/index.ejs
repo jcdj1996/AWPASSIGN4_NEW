@@ -1,0 +1,27 @@
+<% include partials/header.ejs %>
+<div class="container-fluid" ng-app="survey-site" ng-controller="MainCtrl">
+<div class="page-header" id="title">Go Ahead - It's Simple</div>
+
+  <!-- div class="well" -->
+  <div class="jumbotron posts" ng-repeat="post in posts">
+    <h3>{{post}}</h3>
+        </div> 
+    </div> <!--END OF THE 'row' div --> 
+<% include partials/footer.ejs %>
+<!-- Dec 10th Amanda - moved controller to container div --> 
+
+<!-- Added this just to show the idea of what Tom was looking for 
+with a grid layout with images associated with the different panels
+rather than the different surveys (ks 10/11 dec '15)-->
+<!--Changed the pictures to be a little bit more fun -->
+<!-- ks 11Dec15 -->
+
+<!--commented out the pictures, undtil we can get it to work with angular / ks 14/12/15
+<img src="./img/register.png">
+<img src="./img/login.png">
+<img src="./img/filingCabinet.png">
+<img src="./img/stats.png">
+<img src="./img/letter.png">
+<img src="./img/pinkQuestion.png">-->
+
+
