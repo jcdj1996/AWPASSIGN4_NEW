@@ -19,13 +19,16 @@
           <% for (var i = 0; i < survey.length; i++) { %>
           <tr>
             <td>
-			<% survey[i].title %>
-             </td>
-            <td>
-             <%survey[i].username%>
+              <%= survey[i].title %> 
             </td>
             <td>
-          </td>
+              <%= survey[i].username %> 
+            </td>
+            <td>
+             <% var date = new Date(survey[i].created);
+              var dateString = date.toDateString() + " " + date.toLocaleTimeString(); 
+              dateString %>
+            </td>
             <td>
               <a href="/survey/<%= survey[i]._id %>" title="Edit" class="btn btn-primary">
                 <i class="fa fa-pencil-square-o"></i>

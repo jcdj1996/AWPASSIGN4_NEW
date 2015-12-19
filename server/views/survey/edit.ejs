@@ -1,10 +1,10 @@
 <% include ../partials/header.ejs %>
-<main class="container">
-    <h1>Edit a Survey</h1>
-    <div class="col-sm-4">
+<main class="container-fluid">
+    <div class="header" id="title">Edit a Survey</h1>
+    <div class="jumbotron">
         <% if(survey.type="agree"){ %>
 		<!-- A/D form -->
-			<form method="post">
+			<form method="post" id="agreeOrDisagreeTemplate">
 		<input name="formtype" type="hidden" value="agree" />
 
 		<fieldset class="form-group">
@@ -13,30 +13,87 @@
 		</fieldset>
 			<h4><label for="qa1">1.</label></h4>
 			<fieldset class="form-group">
-				<input type="text" name="qa1" value=<% survey.question1 %> class="form-control" style="width:700px" /> 
+				<input type="text" name="qa1" value= "<% survey.question1 %> " class="form-control" style="width:700px" /> 
 			</fieldset>
 			<h4><label for="qa2">2.</label></h4>
 			<fieldset class="form-group">
-				<input type="text" name="qa2" value=<% survey.question2 %> class="form-control" style="width:700px" /> 
+				<input type="text" name="qa2" value= "<% survey.question2 %> " class="form-control" style="width:700px" /> 
 			</fieldset>
 			<h4><label for="qa3">3.</label></h4>
 			<fieldset class="form-group">
-				<input type="text" name="qa3" value=<% survey.question3 %> class="form-control" style="width:700px" /> 
+				<input type="text" name="qa3" value= "<% survey.question3 %>" class="form-control" style="width:700px" /> 
 			</fieldset>
 			<h4><label for="qa4">4.</label></h4>
 			<fieldset class="form-group">
-				<input type="text" name="qa4" value=<% survey.question4 %> class="form-control" style="width:700px" /> 
+				<input type="text" name="qa4" value= "<% survey.question4 %>" class="form-control" style="width:700px" /> 
 			</fieldset>
 			<h4><label for="qa5">5.</label></h4>
 			<fieldset class="form-group">
-				<input type="text" name="qa5" value=<% survey.question5 %> class="form-control" style="width:700px" /> 
+				<input type="text" name="qa5" value= "<% survey.question5 %> "class="form-control" style="width:700px" /> 
 			</fieldset>
 	<input type="submit" class="btn btn-primary" value="Save">
 	</form>	
 		<!-- end A/D Form -->
 		<% }else{%>
 		<!-- Multi Form -->
-				
+	<form method="post" id="multipleChoiceTemplate">
+			<fieldset class="form-group">
+				<input type="text" required class="form-control surveyName" placeholder="Untitled Survey">
+	
+				<input class="form-control" style="width:250px; text-align: center;" name="upload" type="file">
+			</fieldset>
+			<h4><label for="qm1">1.</label></h4>
+			<fieldset class="form-group">
+				<input type="text" id="qm1" placeholder="Untitled Question" class="form-control" style="width:700px" /> 
+			</fieldset>
+			<fieldset class="form-group">	
+				<input type="text" name="option1-1" placeholder="Answer 1" class="form-control questionBox"/>
+				<input type="text" name="option1-2" placeholder="Answer 2" class="form-control questionBox"/>
+				<input type="text" name="option1-3" placeholder="Answer 3" class="form-control questionBox"/>
+				<input type="text" name="option1-4" placeholder="Answer 4" class="form-control questionBox"/>
+			</fieldset>
+			<h4><label for="qm2">2.</label></h4>
+			<fieldset class="form-group">
+				<input type="text" id="qm2" placeholder="Untitled Question" class="form-control" style="width:700px" /> 
+			</fieldset>
+			<fieldset class="form-group">	
+				<input type="text" name="option2-1" placeholder="Answer 1" class="form-control questionBox"/>
+				<input type="text" name="option2-2" placeholder="Answer 2" class="form-control questionBox"/>
+				<input type="text" name="option2-3" placeholder="Answer 3" class="form-control questionBox"/>
+				<input type="text" name="option2-4" placeholder="Answer 4" class="form-control questionBox"/>
+			</fieldset>
+			<h4><label for="qm3">3.</label></h4>
+			<fieldset class="form-group">
+				<input type="text" id="qm3" placeholder="Untitled Question" class="form-control" style="width:700px" /> 
+			</fieldset>
+			<fieldset class="form-group">	
+				<input type="text" name="option3-1" placeholder="Answer 1" class="form-control questionBox"/>
+				<input type="text" name="option3-2" placeholder="Answer 2" class="form-control questionBox"/>
+				<input type="text" name="option3-3" placeholder="Answer 3" class="form-control questionBox"/>
+				<input type="text" name="option3-4" placeholder="Answer 4" class="form-control questionBox"/>
+			</fieldset>
+			<h4><label for="qm4">4.</label></h4>
+			<fieldset class="form-group">
+				<input type="text" id="qm4" placeholder="Untitled Question" class="form-control" style="width:700px" /> 
+			</fieldset>
+			<fieldset class="form-group">	
+				<input type="text" name="option4-1" placeholder="Answer 1" class="form-control questionBox"/>
+				<input type="text" name="option4-2" placeholder="Answer 2" class="form-control questionBox"/>
+				<input type="text" name="option4-3" placeholder="Answer 3" class="form-control questionBox"/>
+				<input type="text" name="option4-4" placeholder="Answer 4" class="form-control questionBox"/>
+			</fieldset>
+			<h4><label for="qm5">5.</label></h4>
+			<fieldset class="form-group">
+				<input type="text" id="qm5" placeholder="Untitled Question" class="form-control" style="width:700px" /> 
+			</fieldset>
+			<fieldset class="form-group">	
+				<input type="text" name="option5-1" placeholder="Answer 1" class="form-control questionBox"/>
+				<input type="text" name="option5-2" placeholder="Answer 2" class="form-control questionBox"/>
+				<input type="text" name="option5-3" placeholder="Answer 3" class="form-control questionBox"/>
+				<input type="text" name="option5-4" placeholder="Answer 4" class="form-control questionBox"/>
+			</fieldset>
+				<input type="submit" class="btn btn-primary" value="Save">
+	</form>
 		<!-- End Multi Form -->
 		<% } %>
     </div>
